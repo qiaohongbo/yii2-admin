@@ -4,8 +4,7 @@ Yii-admin 是使用Yii2开发的一个后台管理系统
 其它功能正在开发中...
 
 安装：
-	1、下载源文件或git clone https://github.com/e282486518/yii2admin.git
-	2、composer install
+	1、下载源文件或git clone https://github.com/qiaohongbo/yii2-admin.git	2、composer install
 	3、php ./yii install/install #配置环境、配置数据库并安装数据库
 	4、Nginx和Apache配置，并设置hosts文件
 	数据库文件：yii2-admin.sql
