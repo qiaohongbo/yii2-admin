@@ -14,11 +14,11 @@ Yii::$app->db->open();
             <tbody>
             <tr>
                 <td>QQ交流群</td>
-                <td>1111111, 1111111</td>
+                <td>608230907</td>
             </tr>
             <tr>
                 <td>下载地址</td>
-                <td><a href="https://github.com/">点击下载</a></td>
+                <td><a href="https://github.com/qiaohongbo/yii2-admin">点击下载</a></td>
             </tr>
             <tr>
                 <td>Yii版本</td>
@@ -70,7 +70,7 @@ Yii::$app->db->open();
                 </tr>
                 <tr>
                     <td>GitHub</td>
-                    <td><a href="https://github.com/qiaohongbo">GitHub</a></td>
+                    <td><a href="https://github.com/qiaohongbo/yii2-admin">GitHub</a></td>
                 </tr>
                 <tr>
                     <td>联系QQ</td>
