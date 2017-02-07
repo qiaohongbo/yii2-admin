@@ -1,55 +1,24 @@
-Yii 2 Advanced Project Template
-===============================
+Yii-admin 是使用Yii2开发的一个后台管理系统
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+主要功能：RBAC
+其它功能正在开发中...
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+安装：
+	1、下载源文件或git clone https://github.com/e282486518/yii2admin.git
+	2、composer install
+	3、php ./yii install/install #配置环境、配置数据库并安装数据库
+	4、Nginx和Apache配置，并设置hosts文件
+	数据库文件：yii2-admin.sql
+	管理员账号：admin
+	管理员密码：123456
+	
+预览：
+![image](https://github.com/qiaohongbo/yii2-admin/blob/master/statics/images/01.png)
+![image](https://github.com/qiaohongbo/yii2-admin/blob/master/statics/images/02.png)
+![image](https://github.com/qiaohongbo/yii2-admin/blob/master/statics/images/03.png)
+![image](https://github.com/qiaohongbo/yii2-admin/blob/master/statics/images/04.png)
+![image](https://github.com/qiaohongbo/yii2-admin/blob/master/statics/images/05.png)
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
 
-DIRECTORY STRUCTURE
--------------------
-
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
