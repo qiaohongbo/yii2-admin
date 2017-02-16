@@ -9,9 +9,7 @@ require(__DIR__ . '/frontend/config/bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/common/config/main.php'),
-    require(__DIR__ . '/common/config/main-local.php'),
-    require(__DIR__ . '/frontend/config/main.php'),
-    require(__DIR__ . '/frontend/config/main-local.php')
+    require(__DIR__ . '/frontend/config/main.php')
 );
 
 //var_dump($config);exit();
@@ -27,5 +25,18 @@ $config['components']['view'] = [
         ],
     ],
 ];
+
+if (!YII_ENV_TEST) {
+    // configuration adjustments for 'dev' environment
+    $config['bootstrap'][] = 'debug';
+    $config['modules']['debug'] = [
+        'class' => 'yii\debug\Module',
+    ];
+
+    $config['bootstrap'][] = 'gii';
+    $config['modules']['gii'] = [
+        'class' => 'yii\gii\Module',
+    ];
+}
 
 (new yii\web\Application($config))->run();
